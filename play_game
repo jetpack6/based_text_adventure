@@ -1,0 +1,36 @@
+print ("It's 11.45pm. You are at home on the couch and you are hungry.")
+print ("Do you go into the kitchen, laundry or outside?")
+room_choice = input ("> ") #this is what the youtuber uses. Ok its just a console display thing. Could be : or - doesnt matter..
+if(room_choice == "kitchen"):
+    print("you get up and step into the kitchen")
+    print("on your right is the cupboard, left of that is the freezer, left of that is the fridge.")
+    print("inside one of these 3, your destiny awaits. You step towards and open the:")
+    
+    kitchen_choice = input ("> ")
+    
+    if kitchen_choice == "cupboard":
+        print("coolman")
+        
+    elif kitchen_choice == "freezer": #elif and else indentation must match the if indentation
+        pass
+        print("cooldude")
+    elif kitchen_choice == "fridge":
+        pass
+        print("coolbro")
+    else: 
+        print("this choice is invalid. Choose either cupboard, freezer or fridge")
+
+elif room_choice == "laundry": #no brackets needed
+    #do this
+    pass #usd pass if there is missing coding but you want to run program anyway.
+    
+elif room_choice == "outside" :
+    #do this (elif can be used continuously as long as it ends in else)
+    pass
+    
+elif room_choice == "secret tunnel":#lol you contemplate the secret tunnel, ect.. hidden options/easter eggs
+    pass
+    
+else:
+    print("This choice is invalid. You wonder if something is wrong with your mind...") #eventually update this to 3 invalids=die
+    print("A nerdy voice calls over a PA system --Sorry i dont know how to re-route this to the beginning yet. Just reloard it if you want to play again-- ")
